@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0"/>
+<meta name="description" content="عيد أضحى مبارك من Business Partners الإسماعيلية × Froneri Egypt"/>
+<title>عيد أضحى مبارك ✨ | Business Partners — طارق زهران</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     LOADING SCREEN
+══════════════════════════════════════ -->
+<div id="loader">
+  <div class="loader-box">
+    <img src="assets/images/bp-logo.jpg" alt="BP" class="loader-bp-logo"/>
+    <div class="loader-brand">Business Partners</div>
+    <div class="loader-city">الإسماعيلية</div>
+    <div class="loader-sub">× Froneri Egypt</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <p class="loader-tagline">🌿 عيد أضحى مبارك 🌿</p>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toast-text">تم التحميل بنجاح ✨</span>
+</div>
+
+<!-- CANVASES -->
+<canvas id="bgCanvas"></canvas>
+<canvas id="confCanvas"></canvas>
+
+<!-- ══════════════════════════════════════
+     HEADER
+══════════════════════════════════════ -->
+<header id="header">
+  <div class="hdr-inner">
+    <!-- BP Logo -->
+    <div class="hdr-brand">
+      <img src="assets/images/bp-logo.jpg" alt="Business Partners" class="hdr-bp-logo"/>
+      <div class="hdr-brand-text">
+        <span class="hdr-title">Business Partners</span>
+        <span class="hdr-sub">طارق زهران — الإسماعيلية</span>
+      </div>
+    </div>
+
+    <!-- Desktop nav -->
+    <nav class="desktop-nav">
+      <a href="#hero">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#greetSection">التهنئة</a>
+      <a href="#about">من نحن</a>
+    </nav>
+
+    <!-- Actions -->
+    <div class="hdr-actions">
+      <button id="audioBtn" class="icon-btn" title="تشغيل الموسيقى">
+        <i class="fa-solid fa-music"></i>
+      </button>
+      <button id="menuBtn" class="icon-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile nav -->
+  <nav id="mobileNav">
+    <a href="#hero">🏠 الرئيسية</a>
+    <a href="#products">🍦 المنتجات</a>
+    <a href="#greetSection">✨ التهنئة</a>
+    <a href="#about">💼 من نحن</a>
+  </nav>
+</header>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-blobs">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <!-- Floating sparkles -->
+  <div class="sparkles" aria-hidden="true">
+    <span class="sp sp1">✦</span><span class="sp sp2">✦</span>
+    <span class="sp sp3">✦</span><span class="sp sp4">✦</span>
+    <span class="sp sp5">✦</span><span class="sp sp6">✦</span>
+  </div>
+
+  <div class="hero-inner">
+    <!-- Big BP logo centered -->
+    <div class="hero-logo-wrap">
+      <img src="assets/images/bp-logo.jpg" alt="Business Partners" class="hero-bp-logo"/>
+      <div class="hero-logo-ring"></div>
+      <div class="hero-logo-ring r2"></div>
+    </div>
+
+    <!-- Badge -->
+    <div class="hero-badge">
+      <span>🌿</span> بمناسبة عيد الأضحى المبارك 1446 <span>🌿</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="hero-h1">
+      <span class="line1">عيد أضحى</span>
+      <span class="line2">مبارك ✨</span>
+    </h1>
+
+    <!-- Sub -->
+    <p class="hero-sub">تهنئة خاصة مقدمة من</p>
+    <p class="hero-company">
+      <strong>Business Partners</strong>
+      <span class="hero-dash">—</span>
+      <span class="hero-city">الإسماعيلية</span>
+    </p>
+    <p class="hero-manager">المدير: <strong>طارق زهران</strong></p>
+
+    <!-- Froneri partner badge -->
+    <div class="partner-badge">
+      <span class="pb-label">وكيل رسمي لـ</span>
+      <img src="https://www.froneri.eg/images/brand.webp" alt="Froneri" class="pb-logo" onerror="this.style.display='none'"/>
+      <span class="pb-name">Froneri Egypt</span>
+    </div>
+
+    <!-- CTAs -->
+    <div class="hero-ctas">
+      <a href="#greetSection" class="btn-gold">
+        <i class="fa-solid fa-envelope-open-text"></i> احصل على تهنئتك
+      </a>
+      <a href="#products" class="btn-outline">
+        <i class="fa-solid fa-ice-cream"></i> منتجاتنا
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     STATS
+══════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="stat"><span class="sn" data-t="500">0</span><span class="sp2">+</span><span class="sl">عميل</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="sn" data-t="11">0</span><span class="sp2">+</span><span class="sl">براند</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="sn" data-t="12">0</span><span class="sp2">+</span><span class="sl">سنة خبرة</span></div>
+  <div class="sdiv"></div>
+  <div class="stat"><span class="sn" data-t="100">0</span><span class="sp2">%</span><span class="sl">رضا العملاء</span></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PRODUCTS SECTION
+     المنتجات تتحرك تحت "نكهات تبهج العيد"
+══════════════════════════════════════ -->
+<section id="products">
+  <div class="section-hdr">
+    <div class="froneri-logo-center">
+      <img src="https://www.froneri.eg/images/brand.webp" alt="Froneri Egypt" class="froneri-center-img" onerror="this.style.display='none'"/>
+    </div>
+    <span class="sec-eye">منتجات Froneri Egypt — الوكيل الرسمي</span>
+    <h2 class="sec-title">نكهات تُبهج العيد</h2>
+    <p class="sec-desc">Business Partners — الإسماعيلية — وكيل رسمي ومعتمد لجميع منتجات Froneri Egypt</p>
+  </div>
+
+  <!-- ── INFINITE AUTO-SCROLL PRODUCTS TRACK ── -->
+  <div class="products-auto-wrap">
+    <div class="products-auto-track" id="productsTrack">
+
+      <!-- Card 1 — Mega -->
+      <div class="pauto-card" data-brand="mega">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#1a1a2e,#16213e,#0f3460)">
+          <img src="https://www.froneri.eg/images//4_Mega/logo2025_02_16_125541.png" alt="Mega" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Mega</h3>
+          <p>Oreo Sticks بتغطية شوكولاتة ولوز</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 2 — Oreo -->
+      <div class="pauto-card" data-brand="oreo">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#2d2d2d,#1a1a1a,#3d3d3d)">
+          <img src="https://www.froneri.eg/images//8_Oreo/logo.png" alt="Oreo" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Oreo Ice Cream</h3>
+          <p>الكلاسيك الأسود المحبوب</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Paradise -->
+      <div class="pauto-card" data-brand="paradise">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#ff6b6b,#ee5a24,#c0392b)">
+          <img src="https://www.froneri.eg/images//11_Paradise/logo2024_11_25_123405.png" alt="Paradise" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Paradise</h3>
+          <p>تجربة استثنائية لا تُنسى</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Dolce -->
+      <div class="pauto-card" data-brand="dolce">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#f8c291,#e58e26,#d35400)">
+          <img src="https://www.froneri.eg/images//22_Dolce/logo2025_02_05_085912.png" alt="Dolce" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Dolce</h3>
+          <p>حلاوة إيطالية أصيلة</p>
+          <div class="pac-stars">★★★★☆</div>
+        </div>
+      </div>
+
+      <!-- Card 5 — Carnavalita -->
+      <div class="pauto-card" data-brand="carnavalita">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#a29bfe,#6c5ce7,#5f27cd)">
+          <img src="https://www.froneri.eg/images//9_Carnavalita/logo.png" alt="Carnavalita" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Carnavalita</h3>
+          <p>بهجة الكرنفال في كل قضمة</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 6 — Cadbury -->
+      <div class="pauto-card" data-brand="cadbury">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#8e44ad,#6c3483,#4a235a)">
+          <img src="https://www.froneri.eg/images//23_cadbury/logo2025_02_23_084910.png" alt="Cadbury" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Cadbury</h3>
+          <p>شوكولاتة بريطانية أيقونية</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 7 — Movenpick -->
+      <div class="pauto-card" data-brand="movenpick">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#2c3e50,#34495e,#1a252f)">
+          <img src="https://www.froneri.eg/images//3_Movenpick/logo.png" alt="Movenpick" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Mövenpick</h3>
+          <p>السويسري الفاخر</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 8 — KitKat -->
+      <div class="pauto-card" data-brand="kitkat">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#c0392b,#e74c3c,#922b21)">
+          <img src="https://www.froneri.eg/images//10_Kitkat/logo2025_02_16_111915.jpeg" alt="KitKat" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>KitKat</h3>
+          <p>Have a Break, Have a KitKat!</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 9 — Kimo Rippo -->
+      <div class="pauto-card" data-brand="kimo">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#00b894,#00cec9,#006266)">
+          <img src="https://www.froneri.eg/images//18_Kimo Rippo/logo2024_12_19_151125.png" alt="Kimo Rippo" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Kimo Rippo</h3>
+          <p>عصا فانيلا وفراولة بأوريو</p>
+          <div class="pac-stars">★★★★☆</div>
+        </div>
+      </div>
+
+      <!-- Card 10 — Kimo Cono -->
+      <div class="pauto-card" data-brand="kimo-cono">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#fdcb6e,#e17055,#d63031)">
+          <img src="https://www.froneri.eg/images//19_Kimo Cono/logo2025_02_05_085854.png" alt="Kimo Cono" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Kimo Cono</h3>
+          <p>كونو بنكهات رائعة</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Card 11 — Squizz Up -->
+      <div class="pauto-card" data-brand="squizz">
+        <div class="pac-img-wrap" style="background:linear-gradient(145deg,#fd79a8,#e84393,#b21f66)">
+          <img src="https://www.froneri.eg/images//17_Squizz Up/logo2025_02_05_085925.png" alt="Squizz Up" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pac-body">
+          <h3>Squizz Up</h3>
+          <p>تيوب فاكهة منعش</p>
+          <div class="pac-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Duplicated for seamless loop — JS will clone -->
+    </div>
+  </div>
+
+  <!-- Manual slider below auto-scroll -->
+  <div class="slider-label">
+    <i class="fa-solid fa-ice-cream"></i> تصفّح المنتجات
+  </div>
+  <div class="products-slider-wrap">
+    <button class="sarrow sa-prev" id="prevBtn"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="products-slider" id="prodSlider">
+      <!-- same cards duplicated for manual slider -->
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#1a1a2e,#16213e,#0f3460)">
+          <img src="https://www.froneri.eg/images//4_Mega/logo2025_02_16_125541.png" alt="Mega" onerror="this.style.display='none'"/>
+          <div class="pcard-tag">الأكثر مبيعاً</div>
+        </div>
+        <div class="pcard-body"><h3>Mega Oreo Sticks</h3><p>بتغطية شوكولاتة وقطع لوز</p><div class="pcard-stars">★★★★★</div></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#2d2d2d,#1a1a1a,#3d3d3d)">
+          <img src="https://www.froneri.eg/images//8_Oreo/logo.png" alt="Oreo" onerror="this.style.display='none'"/>
+          <div class="pcard-tag new">جديد</div>
+        </div>
+        <div class="pcard-body"><h3>Oreo Ice Cream</h3><p>بقطع أوريو الكلاسيكية</p><div class="pcard-stars">★★★★★</div></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#ff6b6b,#ee5a24,#c0392b)">
+          <img src="https://www.froneri.eg/images//11_Paradise/logo2024_11_25_123405.png" alt="Paradise" onerror="this.style.display='none'"/>
+          <div class="pcard-tag eid">عرض العيد</div>
+        </div>
+        <div class="pcard-body"><h3>Paradise</h3><p>تجربة لا تُنسى</p><div class="pcard-stars">★★★★★</div></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#2c3e50,#34495e,#1a252f)">
+          <img src="https://www.froneri.eg/images//3_Movenpick/logo.png" alt="Movenpick" onerror="this.style.display='none'"/>
+          <div class="pcard-tag">Premium</div>
+        </div>
+        <div class="pcard-body"><h3>Mövenpick</h3><p>السويسري الفاخر</p><div class="pcard-stars">★★★★★</div></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#8e44ad,#6c3483,#4a235a)">
+          <img src="https://www.froneri.eg/images//23_cadbury/logo2025_02_23_084910.png" alt="Cadbury" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pcard-body"><h3>Cadbury</h3><p>شوكولاتة بريطانية</p><div class="pcard-stars">★★★★★</div></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#c0392b,#e74c3c,#922b21)">
+          <img src="https://www.froneri.eg/images//10_Kitkat/logo2025_02_16_111915.jpeg" alt="KitKat" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pcard-body"><h3>KitKat</h3><p>Have a Break!</p><div class="pcard-stars">★★★★★</div></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#fd79a8,#e84393,#b21f66)">
+          <img src="https://www.froneri.eg/images//17_Squizz Up/logo2025_02_05_085925.png" alt="Squizz Up" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pcard-body"><h3>Squizz Up</h3><p>تيوب فاكهة منعش</p><div class="pcard-stars">★★★★★</div></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-img" style="background:linear-gradient(145deg,#00b894,#00cec9,#006266)">
+          <img src="https://www.froneri.eg/images//18_Kimo Rippo/logo2024_12_19_151125.png" alt="Kimo Rippo" onerror="this.style.display='none'"/>
+        </div>
+        <div class="pcard-body"><h3>Kimo Rippo</h3><p>عصا فانيلا وفراولة</p><div class="pcard-stars">★★★★☆</div></div>
+      </div>
+    </div>
+    <button class="sarrow sa-next" id="nextBtn"><i class="fa-solid fa-chevron-left"></i></button>
+  </div>
+  <div class="sdots" id="sdots"></div>
+</section>
+
+<!-- ══════════════════════════════════════
+     GREETING SECTION
+══════════════════════════════════════ -->
+<section id="greetSection">
+  <div class="section-hdr light">
+    <span class="sec-eye gold">✨ تهنئة شخصية</span>
+    <h2 class="sec-title">احصل على بطاقتك</h2>
+    <p class="sec-desc">أدخل اسمك واحصل على بطاقة تهنئة بشعار BP الرسمي</p>
+  </div>
+
+  <!-- Glass form -->
+  <div class="glass-form">
+    <img src="assets/images/bp-logo.jpg" alt="BP" class="gf-logo"/>
+    <h3>بطاقة تهنئة شخصية</h3>
+    <p class="gf-sub">Business Partners — طارق زهران — الإسماعيلية</p>
+    <div class="gf-input-wrap">
+      <i class="fa-solid fa-user gf-ico"></i>
+      <input type="text" id="nameInput" placeholder="اكتب اسمك هنا..." maxlength="30" autocomplete="name" inputmode="text"/>
+    </div>
+    <button class="btn-gold full" id="showCardBtn">
+      <i class="fa-solid fa-wand-magic-sparkles"></i> عرض التهنئة
+    </button>
+  </div>
+
+  <!-- ── GREETING CARD OVERLAY ── -->
+  <div id="cardOverlay">
+    <div id="greetCard">
+
+      <!-- Animated top bar -->
+      <div class="gc-topbar"></div>
+
+      <!-- Close btn (hidden in screenshot) -->
+      <button id="closeCardBtn" class="gc-close"><i class="fa-solid fa-xmark"></i></button>
+
+      <!-- Card body -->
+      <div class="gc-body">
+
+        <!-- BP logo big -->
+        <img src="assets/images/bp-logo.jpg" alt="Business Partners" class="gc-bp-logo"/>
+
+        <!-- Brand row -->
+        <div class="gc-brand-row">
+          <span class="gc-bp-name">Business Partners</span>
+          <span class="gc-city">الإسماعيلية</span>
+        </div>
+        <div class="gc-manager">المدير: طارق زهران</div>
+
+        <!-- Partner row -->
+        <div class="gc-partner-row">
+          <span class="gc-partner-label">وكيل رسمي لـ</span>
+          <img src="https://www.froneri.eg/images/brand.webp" alt="Froneri" class="gc-froneri-sm" onerror="this.style.display='none'"/>
+        </div>
+
+        <!-- Eid icons -->
+        <div class="gc-eid-icons">🌿 ⭐ 🌿</div>
+
+        <!-- Greeting -->
+        <h2 class="gc-h2">كل عام وأنت بخير</h2>
+
+        <div class="gc-name-wrap">
+          <span class="gc-ya">يا</span>
+          <span class="gc-name" id="cardName">صديقنا العزيز</span>
+          <span class="gc-heart">❤️</span>
+        </div>
+
+        <div class="gc-divider"><span></span><i class="fa-solid fa-star"></i><span></span></div>
+
+        <p class="gc-msg">
+          تتمنى لك شركة <strong>Business Partners</strong> فرع الإسماعيلية<br/>
+          بقيادة <strong>طارق زهران</strong><br/>
+          عيد أضحى مبارك مليء بالسعادة والنجاح 🌿
+        </p>
+
+        <!-- Froneri products row in card -->
+        <div class="gc-products">
+          <img src="https://www.froneri.eg/images//4_Mega/logo2025_02_16_125541.png" alt="Mega" onerror="this.style.display='none'"/>
+          <img src="https://www.froneri.eg/images//8_Oreo/logo.png" alt="Oreo" onerror="this.style.display='none'"/>
+          <img src="https://www.froneri.eg/images//3_Movenpick/logo.png" alt="Movenpick" onerror="this.style.display='none'"/>
+          <img src="https://www.froneri.eg/images//10_Kitkat/logo2025_02_16_111915.jpeg" alt="KitKat" onerror="this.style.display='none'"/>
+        </div>
+
+        <!-- Footer -->
+        <div class="gc-footer">
+          <img src="https://www.froneri.eg/images/brand.webp" alt="Froneri" class="gc-froneri-footer" onerror="this.style.display='none'"/>
+          <span>Froneri Egypt — وكالة Business Partners</span>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="gc-botbar"></div>
+
+      <!-- ACTIONS — hidden during screenshot -->
+      <div class="gc-actions" id="gcActions">
+        <button class="btn-dl" id="dlBtn">
+          <span id="dlIdle"><i class="fa-solid fa-cloud-arrow-down"></i> تحميل التهنئة</span>
+          <span id="dlLoad" style="display:none">
+            <span class="spin-sm"></span> جاري التجهيز...
+          </span>
+        </button>
+        <button class="btn-share" id="shareBtn">
+          <i class="fa-solid fa-share-nodes"></i> مشاركة
+        </button>
+      </div>
+
+    </div><!-- /greetCard -->
+  </div><!-- /cardOverlay -->
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section id="about">
+  <div class="section-hdr">
+    <span class="sec-eye">💼 من نحن</span>
+    <h2 class="sec-title">Business Partners</h2>
+    <p class="sec-desc">طارق زهران — الإسماعيلية</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="acard reveal">
+      <img src="assets/images/bp-logo.jpg" alt="BP" class="acard-logo"/>
+      <h3>Business Partners</h3>
+      <p>شركة متخصصة في توزيع المنتجات الغذائية الفاخرة في الإسماعيلية وما حولها</p>
+    </div>
+    <div class="acard reveal">
+      <div class="acard-icon" style="background:linear-gradient(135deg,#00b9db,#0984e3)">
+        <i class="fa-solid fa-handshake"></i>
+      </div>
+      <h3>وكيل رسمي Froneri</h3>
+      <p>وكيل معتمد ورسمي لجميع منتجات Froneri Egypt في منطقة الإسماعيلية</p>
+    </div>
+    <div class="acard reveal">
+      <div class="acard-icon" style="background:linear-gradient(135deg,#d4a017,#fbbf24)">
+        <i class="fa-solid fa-award"></i>
+      </div>
+      <h3>11 براند عالمي</h3>
+      <p>Mega · Oreo · KitKat · Cadbury · Mövenpick · Paradise وغيرها متاحة لدينا</p>
+    </div>
+    <div class="acard reveal">
+      <div class="acard-icon" style="background:linear-gradient(135deg,#00b894,#55efc4)">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <h3>الإسماعيلية</h3>
+      <p>موجودون في قلب الإسماعيلية لخدمة عملائنا بأعلى مستوى من الجودة والالتزام</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-skyline" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <rect x="0"   y="55" width="65"  height="45" rx="3" fill="currentColor" opacity=".1"/>
+      <rect x="75"  y="30" width="50"  height="70" rx="3" fill="currentColor" opacity=".1"/>
+      <rect x="135" y="42" width="85"  height="58" rx="3" fill="currentColor" opacity=".14"/>
+      <rect x="230" y="22" width="55"  height="78" rx="3" fill="currentColor" opacity=".1"/>
+      <ellipse cx="540" cy="45" rx="95" ry="55" fill="currentColor" opacity=".16"/>
+      <rect x="445" y="45" width="190" height="55" fill="currentColor" opacity=".16"/>
+      <rect x="518" y="5"  width="44"  height="95" rx="4" fill="currentColor" opacity=".2"/>
+      <rect x="900" y="40" width="75"  height="60" rx="3" fill="currentColor" opacity=".11"/>
+      <rect x="990" y="25" width="55"  height="75" rx="3" fill="currentColor" opacity=".1"/>
+      <rect x="1060" y="42" width="85" height="58" rx="3" fill="currentColor" opacity=".12"/>
+      <rect x="1190" y="35" width="50" height="65" rx="3" fill="currentColor" opacity=".09"/>
+      <rect x="1250" y="55" width="65" height="45" rx="3" fill="currentColor" opacity=".1"/>
+    </svg>
+  </div>
+
+  <div class="footer-inner">
+    <img src="assets/images/bp-logo.jpg" alt="Business Partners" class="footer-bp-logo"/>
+    <div class="footer-name">Business Partners</div>
+    <div class="footer-mgr">طارق زهران — الإسماعيلية</div>
+    <div class="footer-partner">
+      <span>وكيل رسمي لـ</span>
+      <img src="https://www.froneri.eg/images/brand.webp" alt="Froneri" class="footer-froneri-logo" onerror="this.style.display='none'"/>
+    </div>
+    <p class="footer-tag">شراكة تُلهم ✦ نكهة تُبهج ✦ عيد يجمعنا</p>
+    <div class="footer-socials">
+      <a href="#" class="fsoc"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="fsoc"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="fsoc"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p class="footer-copy">© 2025 Business Partners — الإسماعيلية. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<!-- HIDDEN AUDIO — Mega/Froneri themed (YouTube embed as fallback) -->
+<audio id="bgAudio" loop preload="none">
+  <source src="assets/audio/mega-jingle.mp3" type="audio/mpeg"/>
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
